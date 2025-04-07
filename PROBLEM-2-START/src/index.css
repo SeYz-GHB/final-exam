@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+:root {
+  --main-color: #c048cd;
+  --main-color-light: #d48cdc;
+  --grey-color: #bfbfbf;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*  ----------  HEADER  --------------------- */
+
+header {
+  margin: 0 50px 0px;
+  text-align: center;
+}
+
+header h1 {
+  padding: 30px 20px 20px;
+  font-size: 3em;
+  color: var(--main-color);
+}
+
+/*  ----------    FORM  --------------------- */
+.tweet-form {
+  width: 50%;
+
+  margin: auto;
+  margin-top: 2em;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  padding: 30px;
+ 
+}
+
+input {
+ flex: 1;
+  padding: 20px;
+
+  font-family: inherit;
+
+  border: 1px solid var(--grey-color);
+  border-radius: 15px;
+}
+
+.disabled {
+  background: var(--grey-color);
+}
+
+ .enabled {
+  background: var(--main-color);
+}
+button {
+  padding: 20px;
+
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+
+ 
+
+/*  ----------    LIST  --------------------- */
+
+.tweet-list {
+  width: 50%;
+
+  margin: auto;
+  margin-top: 2em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tweet {
+  cursor: pointer;
+  width: 100%;
+
+  padding-left: 20px;
+  padding-top: 10px;
+
+  border-top: 1px solid;
+  border-top-color: var(--grey-color);
+}
+
+ .not-read {
+  color: var(--main-color);
+  font-weight: bold;
+ }
+
+ 
+ .read {
+  color: var(--grey-color);
+ }
